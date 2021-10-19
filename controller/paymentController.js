@@ -95,13 +95,7 @@ const paymentIntegrationPurchase = asychHandler(async (req, res) => {
             console.log("fdd", userExist);
             if (userExist) {
               res.status(400);
-              console.log("Exist", userExist);
-              //  if that product exist then add Qunatity to that product
-              // userExist.productQuantity = userExist.productQuantit + 5;
-              // const x = await userExist.save();
-              // if (x) {
-              //   console.log("Qunatity Added");
-              // }
+             
 
               return;
             }
@@ -119,7 +113,7 @@ const paymentIntegrationPurchase = asychHandler(async (req, res) => {
             if (x) {
               // res.json(x);
               console.log("Added", x);
-              // res.json({ message: "Product Purchases Successfully" });
+      
             } else {
               console.log("failed");
               res.status(404);
